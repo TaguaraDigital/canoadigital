@@ -149,7 +149,7 @@ a {
   z-index: 1000;
   top: 0;
   left: 0;
-  background: blue;
+  background: #1335F2;
   height: 100%;
   width: 100%;
   display: flex;
@@ -845,7 +845,7 @@ a {
   min-height: 100vh;
   margin: 4rem auto 0;
   padding: 5rem;
-  background: url(../assets/img/contact.jpg) no-repeat center center;
+  background: url("../assets/img/contact.jpg") no-repeat center center;
   background-size: cover;
 }
 

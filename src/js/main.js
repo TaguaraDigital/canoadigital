@@ -5,13 +5,12 @@ window.addEventListener("load", () => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-      const tl = gsap.timeline();
-      tl.fromTo('.section__title--hero',{color:"#F25D27", y:-1000, scale: 2},{delay:1, color:"#FCF7FF", y:0, scale: 1, duration:1})
-          .from('.section__subtitle--hero', {y:1000, scale: 2, duration:1})
-          .from('#hero_button', {y:-1500, rotate: 720, duration:3, ease: 'bounce'})
+   alert('ya cargo')
+   const tl = gsap.timeline();
+   tl.fromTo('.section__title--hero',{color:"#F25D27", y:-1000, scale: 2},{delay:1, color:"#FCF7FF", y:0, scale: 1, duration:1})
+      .from('.section__subtitle--hero', {y:1000, scale: 2, duration:1})
+      .from('#hero_button', {y:-1500, rotate: 720, duration:3, ease: 'bounce'})
 }, false); 
-
-
 
 const menuBtn = document.getElementById('menu-icon'); // label checkbox
 const menuToggle = document.getElementById('menu-btn'); // checkbox
