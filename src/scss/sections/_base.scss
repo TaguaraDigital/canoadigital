@@ -66,12 +66,30 @@ a {
    margin-bottom: 1rem;
 }
 
-// @include phone{
-//    .section__title{
-//       font-size: 3rem;
-//    }
+.loader{
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+   left: 0;
+   background: blue;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-//    .section__subtitle{
-//       font-size: 1.5rem;
-//    }
-// }
+   img{
+      width: 300px;
+   }
+ }
+ 
+ .disppear{
+   animation: vanish 1s forwards;
+ }
+
+ @keyframes vanish {
+   100%{
+     opacity: 0;
+     visibility: hidden;
+   }
+ }
