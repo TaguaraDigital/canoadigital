@@ -1,0 +1,36 @@
+.footer {
+   background: $orange;
+   font-size: 1rem;
+   padding: 5rem;
+
+   a { 
+      text-decoration: none;
+      color: $white;
+   }
+
+   .social-list__link:hover {
+      color: $blue;
+   }
+
+   .social-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0 0;
+      padding: 0;
+
+      &__item {
+         margin: 0 .5rem;
+      }
+
+      &__link {
+         padding: .5rem;
+      }
+   }
+
+   p {
+      text-align: center;
+      font-size: .8rem;
+      text-transform: capitalize;
+   }
+}

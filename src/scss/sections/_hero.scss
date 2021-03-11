@@ -1,0 +1,114 @@
+.main-hero{
+   position: relative;
+   padding: 60px 8vw;
+   .hero{
+      min-height: calc(100vh - 150px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      @include table {
+         justify-content: center;
+         flex-direction: column;
+      }
+
+      &__content {
+         width: 100%;
+         max-width: 850px;
+         margin-top: 60px;
+ 
+         @include table {
+            margin-bottom: 100px;
+         }
+      }
+
+      .section__title--hero{
+         width: 100%;
+         position: relative;
+         font-size: clamp(1rem, 8vw, 5rem);
+         line-height: 1.5;
+         text-align: left;
+         padding: 4rem 0 2rem;
+         z-index: 100;
+         color: $white;
+         margin-right: 2rem;
+      }
+
+      .section__subtitle--hero{
+         position: relative;
+         text-align: left;
+         color: rgba($white,.6);
+         font-size: 2rem;
+         font-weight: normal;
+         margin-top: 1rem;
+         z-index: 100;
+         
+         span {
+            color: rgba($white,1);
+            font-weight: bold;
+         }
+      }
+
+      &__button {
+         flex-shrink: 0;
+         width: 200px;
+         height: 200px;
+         padding: 0 1.5rem;
+         background-color: $orange;
+         border-radius: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         &:hover {
+            transform: scale(.95);
+         }
+         
+         a {
+            font-size: 2rem;
+            background-color: transparent;
+            color: $black;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            
+            &:hover {
+               color: $white;
+            }
+         }
+      }
+   }
+   
+   .social-list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 60px;
+      padding: 0 10vw;
+      
+      @include table {
+         margin-top: 2rem;
+         justify-content: center;
+      }
+      
+      &__item {
+         width: 50px;
+         height: 50px;
+         border: 1px solid $white;
+         border-radius: 50%;
+         padding: 0.25rem;
+         margin: 0 .5rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         &:hover {
+            background-color: $orange;
+         }
+      }
+      
+      &__link {
+         padding: .5rem;
+      }
+   }
+}
