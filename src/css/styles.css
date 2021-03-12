@@ -162,7 +162,7 @@ a {
 }
 
 .disppear {
-  animation: vanish 1s forwards;
+  animation: vanish .3s forwards;
 }
 
 @keyframes vanish {
