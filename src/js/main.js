@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-   alert('ya cargo')
    const tl = gsap.timeline();
    tl.fromTo('.section__title--hero',{color:"#F25D27", y:-1000, scale: 2},{delay:1, color:"#FCF7FF", y:0, scale: 1, duration:1})
       .from('.section__subtitle--hero', {y:1000, scale: 2, duration:1})
