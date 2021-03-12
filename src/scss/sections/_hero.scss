@@ -1,8 +1,8 @@
 .main-hero{
    position: relative;
-   padding: 60px 8vw;
+   padding: 80px 8vw;
    .hero{
-      min-height: calc(100vh - 150px);
+      min-height: calc(100vh - 160px);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -15,10 +15,9 @@
       &__content {
          width: 100%;
          max-width: 850px;
-         margin-top: 60px;
  
          @include table {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
          }
       }
 
@@ -28,7 +27,6 @@
          font-size: clamp(1rem, 8vw, 5rem);
          line-height: 1.5;
          text-align: left;
-         padding: 2rem 0;
          z-index: 100;
          color: $white;
          margin-right: 2rem;
@@ -45,12 +43,11 @@
          
          span {
             color: rgba($white,1);
-            font-weight: bold;
          }
+
          @include table {
             font-size: 1.4rem;
          }
- 
       }
 
       &__button {
@@ -65,14 +62,10 @@
          align-items: center;
 
          @include table {
-            width: 180px;
-            height: 180px;
+            width: 170px;
+            height: 170px;
          }
  
-         &:hover {
-            transform: scale(.95);
-         }
-         
          a {
             font-size: 2rem;
             background-color: transparent;
@@ -106,10 +99,12 @@
       &__item {
          width: 50px;
          height: 50px;
-         border: 1px solid $white;
-         border-radius: 50%;
          padding: 0.25rem;
          margin: 0 .5rem;
+         
+         border: 1px solid $white;
+         border-radius: 50%;
+         
          display: flex;
          justify-content: center;
          align-items: center;

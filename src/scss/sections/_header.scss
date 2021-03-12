@@ -5,7 +5,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0 10vw;
+   padding: 0 8vw;
    z-index: 300;
    @include easeOut;
 
@@ -15,7 +15,7 @@
 
    .logo{
       z-index: 1000;
-      width: 100px;
+      width: 90px;
    }
 
    .nav-contact {
@@ -37,25 +37,21 @@
       }
    }
    
-   a{
-      text-decoration: none;
-      color: inherit;
-      text-transform: capitalize;
-   }
-
    .nav-links{
       height: 100vh;
       width: 100vw;
       position: absolute;
+      padding: 10rem 0;
       top: 0;
       left: 0;
-      transform: translate(-100%);
-      list-style: none;
-      opacity: 0;
+      
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      padding: 10rem 0;
+      
+      transform: translate(-100%);
+      list-style: none;
+      opacity: 0;
       @include easeOut; 
 
       .nav-link{
@@ -72,59 +68,59 @@
             color: $white ;
          }
 
-            &::before,
-            &::after{
-               content: '';
-               background: $white;
-               width: 100%;
-               height: 3px;
-               position: absolute;
-               z-index: 400;
-               @include easeOut;
-            }
+         &::before,
+         &::after{
+            content: '';
+            background: $white;
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            z-index: 400;
+            @include easeOut;
+         }
             
-            &::before{
-               top: 0;
-               left: 0;
-               transform-origin: right;
-               transform: scale(0);
-               @include easeOut;
-            }
+         &::before{
+            top: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scale(0);
+            @include easeOut;
+         }
             
-            &:after{
-               bottom: 0;
-               right: 0;
-               z-index: 1;
-               transform-origin: left;
-               transform: scale(0);
-               @include easeOut;
-            }
+         &:after{
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            transform-origin: left;
+            transform: scale(0);
+            @include easeOut;
+         }
 
-            &:hover:before{
-               transform: scale(1);
-               transform-origin: left;
-               @include easeOut;
-            }
+         &:hover:before{
+            transform: scale(1);
+            transform-origin: left;
+            @include easeOut;
+         }
 
-            &.active:before,
-            &.active:after{
-               transform: scale(1);
-               @include easeOut;
-            }
+         &.active:before,
+         &.active:after{
+            transform: scale(1);
+            @include easeOut;
+         }
 
-            &:hover:after{
-               transform: scale(1);
-               @include easeOut;
-            }
+         &:hover:after{
+            transform: scale(1);
+            @include easeOut;
+         }
       }
    }
    
-
    .menu-icon{
       position: relative;
       padding:26px 10px;
       cursor: pointer;
       z-index: 300;
+
       display: flex;
       align-items: center;
 
@@ -155,7 +151,6 @@
             transform: translateY(7px);
             width: 75%;
          }
-
       }
    }
 
@@ -169,39 +164,40 @@
       @include easeOut;
    }
 
-.menu-btn:checked ~ .nav-links{
-   display: flex;
-   opacity: 1;
-   background-color: rgba($orange,.9);
-   transform: translateX(0);
-   @include easeOut;
-
-   .nav-link{
+   .menu-btn:checked ~ .nav-links{
+      display: flex;
       opacity: 1;
+      background-color: rgba($orange,.9);
+
       transform: translateX(0);
       @include easeOut;
 
-      &:nth-of-type(2){
-         transition-delay: .2s;
-      }
+      .nav-link{
+         opacity: 1;
+         transform: translateX(0);
+         @include easeOut;
 
-      &:nth-of-type(3){
-         transition-delay: .4s;
-      }
-   
-      &:nth-of-type(4){
-         transition-delay: .6s;
-      }
-   }
-}
+         &:nth-of-type(2){
+            transition-delay: .4s;
+         }
 
-.menu-btn:checked ~ .menu-icon {
-   .menu-icon__line::before{
-      width: 75%;
+         &:nth-of-type(3){
+            transition-delay: .6s;
+         }
+      
+         &:nth-of-type(4){
+            transition-delay: 1s;
+         }
+      }
    }
-   
-   .menu-icon__line::after{
-      width: 125%;
+
+   .menu-btn:checked ~ .menu-icon {
+      .menu-icon__line::before{
+         width: 75%;
+      }
+      
+      .menu-icon__line::after{
+         width: 125%;
+      }
    }
-}
 }

@@ -3,15 +3,16 @@
    padding:4rem;
    margin: 4rem auto;
    position: relative;
+
    display: grid;
    grid-template-columns: 2fr 1fr;
    background-color: $white;
    z-index: -2;
-
    
    &__content{
       position: relative;
       margin-right: 1rem;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -35,10 +36,6 @@
       background: url('../assets/img/ilustrations/about.jpg') no-repeat center center;
       background-size: cover;
       z-index: -2;
-
-      .img{
-         width: 100%;
-      }
 
       &:after{
          position: absolute;

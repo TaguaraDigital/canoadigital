@@ -7,7 +7,6 @@
 html {
    font-size: $fs-base;
    font-family: $ff-body;
-   scroll-behavior: smooth;
 }
 
 body{
@@ -22,7 +21,7 @@ img{
    display: block;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
    font-family: $ff-title;
 }
 
@@ -34,6 +33,7 @@ p{
 
 a { 
    text-decoration: none;
+   text-transform: capitalize;
    color: $white;
 }
 
@@ -41,7 +41,7 @@ a {
    position: relative;
    color: $orange;
    font-size: clamp(1rem, 8vw, 5rem);
-   font-weight: normal;
+   font-weight: bold;
    text-transform: uppercase;
    text-align:left;
    margin-bottom: 0;
@@ -79,12 +79,12 @@ a {
    align-items: center;
 
    img{
-      width: 300px;
+      width: 200px;
    }
  }
  
  .disppear{
-   animation: vanish .3s forwards;
+   animation: vanish .2s forwards;
  }
 
  @keyframes vanish {
