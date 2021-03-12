@@ -199,7 +199,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .main-hero .hero__content {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 
@@ -209,7 +209,7 @@ a {
   font-size: clamp(1rem, 8vw, 5rem);
   line-height: 1.5;
   text-align: left;
-  padding: 4rem 0 2rem;
+  padding: 2rem 0;
   z-index: 100;
   color: #FCF7FF;
   margin-right: 2rem;
@@ -230,6 +230,12 @@ a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .main-hero .hero .section__subtitle--hero {
+    font-size: 1.4rem;
+  }
+}
+
 .main-hero .hero__button {
   flex-shrink: 0;
   width: 200px;
@@ -240,6 +246,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .main-hero .hero__button {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .main-hero .hero__button:hover {
@@ -253,6 +266,12 @@ a {
   text-align: center;
   cursor: pointer;
   border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .main-hero .hero__button a {
+    font-size: 1.6rem;
+  }
 }
 
 .main-hero .hero__button a:hover {
@@ -601,7 +620,7 @@ a {
   position: relative;
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   column-gap: .5rem;
   row-gap: 3rem;
   text-align: justify;
@@ -841,12 +860,19 @@ a {
   width: 100%;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   min-height: 100vh;
   margin: 4rem auto 0;
   padding: 5rem;
   background: url("../assets/img/contact.jpg") no-repeat center center;
   background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    border: 3px solid red;
+    padding: 1rem;
+  }
 }
 
 .contact::after {
@@ -870,7 +896,7 @@ a {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2rem 0 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -880,6 +906,12 @@ a {
 
 .contact .social-list__link {
   padding: .5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contact .social-list__link {
+    font-size: .7rem;
+  }
 }
 
 .contact .social-list__link:hover,
@@ -907,7 +939,7 @@ a {
 }
 
 .contact__form {
-  width: 90%;
+  width: 95%;
   min-height: 500px;
   margin: auto;
   display: flex;
@@ -916,7 +948,7 @@ a {
   align-items: flex-start;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 0.5rem rgba(242, 93, 39, 0.5);
-  padding: 2rem;
+  padding: 1rem;
   z-index: 100;
 }
 
@@ -931,7 +963,7 @@ a {
   width: 100%;
   background: #FCF7FF;
   padding: .5rem;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
   outline: none;
   border: none;
 }
@@ -960,7 +992,7 @@ a {
 
 @media screen and (max-width: 600px) {
   .contact .section__title--contact {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

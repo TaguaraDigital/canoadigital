@@ -18,7 +18,7 @@
          margin-top: 60px;
  
          @include table {
-            margin-bottom: 100px;
+            margin-bottom: 60px;
          }
       }
 
@@ -28,7 +28,7 @@
          font-size: clamp(1rem, 8vw, 5rem);
          line-height: 1.5;
          text-align: left;
-         padding: 4rem 0 2rem;
+         padding: 2rem 0;
          z-index: 100;
          color: $white;
          margin-right: 2rem;
@@ -47,6 +47,10 @@
             color: rgba($white,1);
             font-weight: bold;
          }
+         @include table {
+            font-size: 1.4rem;
+         }
+ 
       }
 
       &__button {
@@ -60,6 +64,11 @@
          justify-content: center;
          align-items: center;
 
+         @include table {
+            width: 180px;
+            height: 180px;
+         }
+ 
          &:hover {
             transform: scale(.95);
          }
@@ -72,6 +81,9 @@
             cursor: pointer;
             border: none;
             
+            @include table {
+               font-size: 1.6rem;
+            }
             &:hover {
                color: $white;
             }
