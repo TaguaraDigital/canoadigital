@@ -12,7 +12,7 @@
       padding:1rem;
    }
 
-   background: url('../assets/img/contact.jpg') no-repeat center center;
+   background: url('../assets/img/ilustrations/contact.jpg') no-repeat center center;
    background-size: cover; 
 
    &::after{ // la capa sobre la image
@@ -22,7 +22,7 @@
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba($blue,.7);
+      background: rgba($black,.6);
    }
 
    &__titles{
