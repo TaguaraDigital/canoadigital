@@ -552,7 +552,7 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url("../assets/img/about.jpg") no-repeat center center;
+  background: url("../assets/img/ilustrations/about.jpg") no-repeat center center;
   background-size: cover;
   z-index: -2;
 }
